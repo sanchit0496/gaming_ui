@@ -45,6 +45,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%; /* Ensures text container spans the full width */
+  flex-wrap: wrap;
 }
 
 .team-one::before {

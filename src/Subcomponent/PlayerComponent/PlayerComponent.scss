@@ -1,0 +1,48 @@
+.player-card {
+    position: relative;
+    width: 80px; /* Reduced width */
+    background-color: #0D0D0D; /* Dark background */
+    border-radius: 8px; /* Slightly smaller round corners for smaller size */
+    overflow: hidden;
+    text-align: center;
+    color: white; /* White text color */
+    font-family: sans-serif;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Adjusted shadow for smaller size */
+    border: 0.5px solid #fff; /* Thinner border for a smaller card */
+    animation: shine 1.5s ease infinite;
+    margin: 5px;
+  }
+  
+  .image-container {
+    padding: 8px;
+    background-color: red; /* Red circle background */
+    border-radius: 50%; /* Make it round */
+    width: 40px; /* Reduced size */
+    height: 40px; /* Reduced size */
+    margin: auto; /* Center it */
+    position: relative;
+    top: -30px; /* Adjusted for smaller card size */
+    border: 0.5px solid #fff; /* Thinner border for a smaller card */
+  
+    img {
+      width: 100%; /* Fill the container */
+      border-radius: 50%; /* Make the image round */
+    }
+  }
+  
+  .name {
+    margin-top: 30px; /* Adjusted for smaller card size */
+    padding: 8px 0; /* Slightly less padding */
+    background-color: grey; /* Green background like a soccer field */
+    font-size: 12px; /* Smaller font size for smaller card */
+  }
+  
+  @keyframes shine {
+    from {
+      box-shadow: 0 0 4px #fff;
+    }
+    to {
+      box-shadow: 0 0 8px #fff;
+    }
+  }
+  

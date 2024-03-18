@@ -1,10 +1,20 @@
 import React from 'react';
-import './TeamOne.css'; // Make sure to import the CSS file
+import Button from '../../Subcomponent/Button/Button';
+import './TeamOne.scss'; // Make sure to import the CSS file
 
 const TeamOne = () => {
-  return (
-    <div className="team-one-shine">Team One</div>
-  );
+    const handleButtonClick = () => {
+        console.log('clicked');
+    }
+
+    return (
+        <div className="team-one">
+            <div className="text-container">Team One</div>
+            <div className="button-container">
+                <Button backgroundColor="#FF1493" onClick={handleButtonClick}>Click Me</Button>
+            </div>
+        </div>
+    );
 };
 
 export default TeamOne;

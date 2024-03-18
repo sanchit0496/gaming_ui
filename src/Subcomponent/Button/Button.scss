@@ -1,0 +1,42 @@
+.shine-button {
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease;
+    border: none;
+    color: #FFF;
+    background-color: #34D399; /* Default background color */
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+  
+    
+    &:hover {
+      background: linear-gradient(135deg, rgba(255,255,255,0.25) 50%, transparent 50%) right bottom / 200% 200%;
+      animation: shine 1.5s ease forwards;
+    }
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.5) 50%, transparent 50%);
+      opacity: 1;
+      animation: shineMove 1.5s infinite;
+      transition: opacity 0.3s ease;
+    }
+  
+  }
+  
+  @keyframes shineMove {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  

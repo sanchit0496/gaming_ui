@@ -4,10 +4,14 @@
   align-items: center;
   height: 100vh; /* Adjust the height as needed */
   width: 100vw;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  background-color: black;
 }
 
 .side-component {
   width:  25vw;
+  padding: 5vh;
 }
 
 .graph-container {

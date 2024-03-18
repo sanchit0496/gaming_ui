@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  @keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+  }
+  
+  .team-two {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 65vh;
+    border-radius: 1px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Updated to arrange children vertically */
+    justify-content: space-between; /* Keeps the text and button spaced out */
+    font-family: sans-serif;
+    font-weight: bold;
+    min-width: 300px;
+  }
+  
+  .button-container {
+    flex: 0 1 20%; /* Allocates 20% of the container height to the button */
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: end; /* Align the button to the bottom */
+    width: 100%; /* Ensures button container spans the full width */
+    padding: 20px;
+  }
+  
+  .text-container {
+    flex: 0 1 80%; /* Allocates 80% of the container height to the text area */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensures text container spans the full width */
+  }
+  
+  .team-two::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #0D0D0D; /* Dark background to enhance neon effect */
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: 
+        linear-gradient(to right, #32CD32 30%, transparent 30%), /* Darker Neon Lime */
+        linear-gradient(to right, #FF1493 30%, transparent 30%), /* Darker Neon Pink */
+        linear-gradient(to right, #7DF9FF 30%, transparent 30%), /* Darker Neon Blue */
+        linear-gradient(to right, #FFD700 30%, transparent 30%); /* Darker Neon Gold */
+    animation: rotate 4s linear infinite;
+  }
+  
+  .team-two::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: #0D0D0D; /* Matching dark background for contrast */
+    border-radius: 1px;
+  }
+  

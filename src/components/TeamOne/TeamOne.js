@@ -6,6 +6,7 @@ import "./TeamOne.scss"; // Make sure to import the CSS file
 const TeamOne = () => {
   const handleButtonClick = () => {
     console.log("clicked");
+    alert('Under Implementation')
   };
 
   return (

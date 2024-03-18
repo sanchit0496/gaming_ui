@@ -43,19 +43,29 @@ const Graph = () => {
       },
       y: {
         beginAtZero: true,
+        ticks: {
+          color: 'white', // Set Y-axis labels to white
+        },
+        grid: {
+          color: 'rgba(255, 255, 255, 0.1)' // Optional: Adjust grid line color for visibility
+        }
       },
     },
     animation: {
-      duration: 100, // Adjust for smoother transitions
+      duration: 500, // Adjust for smoother transitions
     },
     plugins: {
       legend: {
         display: true,
+        labels: {
+          color: 'white' // Optional: Adjust legend text to white if needed
+        }
       },
     },
     maintainAspectRatio: false,
     responsive: true,
   };
+  
 
   return(
     <div className= 'graph-container'>

@@ -1,0 +1,15 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust the height as needed */
+  width: 100vw;
+}
+
+.side-component {
+  width:  25vw;
+}
+
+.graph-container {
+  width:  50vw;
+}

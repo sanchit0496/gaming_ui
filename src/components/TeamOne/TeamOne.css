@@ -1,0 +1,38 @@
+.team-one-shine {
+    position: relative;
+    padding: 20px;
+    border: 3px solid maroon;
+    color: black; /* Adjust text color as needed */
+    background-color: #fff;
+    overflow: hidden;
+  }
+  
+  .team-one-shine::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      -45deg, 
+      transparent 33%, 
+      rgba(255, 255, 255, 0.8) 33%, 
+      rgba(255, 255, 255, 0.8) 66%, 
+      transparent 66%
+    );
+    background-size: 300% 300%;
+    z-index: 1;
+    animation: borderShine 2s linear infinite;
+  }
+  
+  /* Adjust keyframe animation based on reference */
+  @keyframes borderShine {
+    0% {
+      background-position: 0 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
